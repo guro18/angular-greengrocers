@@ -1,0 +1,7 @@
+<h3>{{item?.quantity}}</h3>
+<img *ngIf="item" 
+[src]="getImageUrl()" 
+alt="{{item.name}} Image" 
+class="item-image">
+<button (click)="decreaseQuantity()">-</button>
+<button (click)="increaseQuantity()">+</button>

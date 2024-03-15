@@ -1,0 +1,6 @@
+<p>{{item?.name}}</p>
+<img *ngIf="item" 
+[src]="getImageUrl()" 
+alt="{{item.name}} Image" 
+class="item-image">
+<button (click)="addToCart()">Add to Cart</button>
